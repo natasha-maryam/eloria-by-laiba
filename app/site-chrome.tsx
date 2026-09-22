@@ -21,15 +21,15 @@ export function SiteHeader({ actions }: { actions?: React.ReactNode }) {
       <div className="mx-auto grid h-[74px] max-w-[1440px] grid-cols-[1fr_auto_1fr] items-center px-4 sm:h-[78px] sm:px-6 lg:px-10">
         <Sheet>
           <SheetTrigger asChild><button className="justify-self-start lg:hidden" aria-label="Open menu"><Menu /></button></SheetTrigger>
-          <SheetContent side="left" className="w-[88vw] max-w-[390px] border-none bg-[#351128] p-0 text-white shadow-[24px_0_70px_rgba(28,7,21,.35)]">
-            <SheetHeader className="border-b border-white/10 px-7 pb-6 pt-7 text-left"><SheetTitle><Wordmark light /></SheetTitle><SheetDescription className="text-white/45">Clothing made personal.</SheetDescription></SheetHeader>
-            <nav className="flex flex-1 flex-col px-7 py-8">
-              {links.map((link, index) => <SheetClose key={link.href} asChild><a href={link.href} className="group grid grid-cols-[34px_1fr_auto] items-center border-b border-white/10 py-5">
-                <span className="font-serif text-sm text-[#c89cb3]">0{index + 1}</span><span><span className="block font-serif text-[1.65rem] leading-tight">{link.label}</span><span className="mt-1 block text-xs text-white/40">{link.note}</span></span><ArrowUpRight className="translate-x-2 opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100" size={18} />
+          <SheetContent side="left" className="w-[88vw] max-w-[390px] border-none bg-[#fcfaf7] p-0 text-[#351128] shadow-[24px_0_70px_rgba(28,7,21,.12)]">
+            <SheetHeader className="border-b border-[#3f1731]/10 px-7 pb-5 pt-7 text-left"><SheetTitle><Wordmark /></SheetTitle><SheetDescription className="text-[#3f1731]/55">Clothing made personal.</SheetDescription></SheetHeader>
+            <nav className="flex flex-1 flex-col px-7 py-6">
+              {links.map((link, index) => <SheetClose key={link.href} asChild><a href={link.href} className="group grid grid-cols-[28px_1fr_auto] items-center border-b border-[#3f1731]/10 py-4">
+                <span className="font-serif text-xs text-[#8b3e67]">0{index + 1}</span><span><span className="block font-serif text-xl leading-tight">{link.label}</span><span className="mt-0.5 block text-[0.7rem] text-[#3f1731]/50">{link.note}</span></span><ArrowUpRight className="translate-x-2 text-[#8b3e67] opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100" size={16} />
               </a></SheetClose>)}
-              <SheetClose asChild><a href="/" className="mt-7 text-sm text-white/60">Return home</a></SheetClose>
+              <SheetClose asChild><a href="/" className="mt-5 text-xs text-[#3f1731]/60">Return home</a></SheetClose>
             </nav>
-            <div className="border-t border-white/10 px-7 py-6"><a href="https://www.instagram.com/eloriabylaiba/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm text-white/70"><Camera size={16} /> @eloriabylaiba</a></div>
+            <div className="border-t border-[#3f1731]/10 px-7 py-5"><a href="https://www.instagram.com/eloriabylaiba/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-xs text-[#3f1731]/70"><Camera size={15} /> @eloriabylaiba</a></div>
           </SheetContent>
         </Sheet>
         <nav className="hidden items-center gap-6 text-[0.82rem] lg:flex">{links.map((link) => <a key={link.href} href={link.href} className="hover:text-[#8b3e67]">{link.label}</a>)}</nav>
