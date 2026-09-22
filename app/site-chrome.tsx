@@ -7,7 +7,7 @@ const links = [
   { label: "Frock Atelier", href: "/collections/frocks", note: "Explore silhouettes" },
   { label: "Design Your Own", href: "/design-your-own", note: "Create it your way" },
   { label: "Find Your Fit", href: "/fit-room", note: "Measurements made simple" },
-  { label: "Studio Notes", href: "/studio-notes", note: "Styling & craft stories" },
+  // { label: "Studio Notes", href: "/studio-notes", note: "Styling & craft stories" },
 ];
 
 export function Wordmark({ light = false }: { light?: boolean }) {
