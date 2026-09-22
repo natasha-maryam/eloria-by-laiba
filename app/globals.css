@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "../vendor/shadcn-tailwind-4.13.0.css";
+
+:root {
+  --background: #fcfaf7;
+  --foreground: #2a1722;
+  --card: #ffffff;
+  --card-foreground: #2a1722;
+  --popover: #fcfaf7;
+  --popover-foreground: #2a1722;
+  --primary: #3f1731;
+  --primary-foreground: #ffffff;
+  --secondary: #eadde2;
+  --secondary-foreground: #3f1731;
+  --muted: #f2ecea;
+  --muted-foreground: #78636e;
+  --accent: #8b3e67;
+  --accent-foreground: #ffffff;
+  --destructive: #b42318;
+  --border: #dfd2d8;
+  --input: #dfd2d8;
+  --ring: #8b3e67;
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  --color-background: var(--background); --color-foreground: var(--foreground);
+  --color-card: var(--card); --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover); --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary); --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary); --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted); --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent); --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive); --color-border: var(--border);
+  --color-input: var(--input); --color-ring: var(--ring);
+  --radius-lg: var(--radius); --radius-md: calc(var(--radius) - 2px); --radius-sm: calc(var(--radius) - 4px);
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--background); color: var(--foreground); font-family: Arial, Helvetica, sans-serif; }
+.font-serif { font-family: Georgia, "Times New Roman", serif; }
+.font-script { font-family: "Brush Script MT", cursive; }
+button, a { transition: color .2s ease, background-color .2s ease, border-color .2s ease, opacity .2s ease; }
+::selection { background: #8b3e67; color: white; }
